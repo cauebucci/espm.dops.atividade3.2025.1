@@ -18,7 +18,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd ~/espm-dataops-github-actions
+            cd ~/espm.dops.atividade3.2025.1
             git pull
             sudo docker build -t flask-api .
             sudo docker stop flask-api || true
